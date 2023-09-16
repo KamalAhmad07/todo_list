@@ -1,0 +1,111 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 16px;
+}
+
+/* Style buttons */
+
+.Button {
+  margin: 16px 5px; /* Add margin for spacing between buttons */
+  padding: 3px; /* Add padding for button size */
+  background-color: red; /* Example background color for delete buttons */
+  color: white; /* Text color */
+  border: none; /* Remove button border */
+  cursor: pointer; /* Add pointer cursor for better UX */
+  border-radius: 3px;
+  box-sizing: border-box;
+}
+
+.Button:hover {
+  background-color: #0056b3;
+}
+
+/* Style the task list */
+.tasks {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  font-weight: bold;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+/* Style paragraphs with the class "para" */
+.para {
+  color: green;
+   /* Use text-align to align text within the paragraphs */
+}
+
+.tasks {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  font-weight: bold;
+}
+
+.task-list {
+  border: 1px solid #ccc;
+  padding: 16px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.task-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #ddd;
+  padding: 12px; /* Adjust padding as needed */
+  margin: 12px 0; /* Equal margin top and bottom for spacing */
+  border-radius: 3px;
+  
+}
+
+.task-item .Button {
+  margin-left: 3rem; /* Adjust the margin to add space */
+}
+
+/* Increase the margin between each task item */
+.task-list {
+  margin-bottom: 12px; /* Increase margin-bottom for spacing */
+}
+
+
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
